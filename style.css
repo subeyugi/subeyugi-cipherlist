@@ -1,0 +1,175 @@
+*{
+    color: #f0f0f0;
+}
+
+html{
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: #101010;
+}
+
+h1{
+    margin: 0px;
+    padding :20px;
+}
+
+header{
+    margin: 0px;
+    padding: 0px;
+    height: 90px;
+    background-color: #404040;
+}
+
+nav{
+    padding:0px;
+    padding-left: 20px;
+}
+
+li{
+    list-style: none;
+    padding: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+ul{
+    display: flex;
+    padding: 0px;
+    margin: 0px;
+    width: calc(100% - 20px);
+}
+
+.li{
+    display: block;
+    text-decoration: none;
+    color: #f0f0f0;
+    margin: 10px;
+}
+
+.select{
+    background-color: #404040;
+}
+
+li:hover{
+    background-color: #505050;
+}
+
+
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  display: none;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: rgba(0,0,0,0);
+}
+
+*:hover::-webkit-scrollbar-thumb {
+  background-color: rgba(0,0,0,0.3);  
+}
+
+div {
+  padding: 0px;
+  margin: 0px;
+}
+
+.container {
+  display: flex;
+  margin: 0px;
+  padding: 0px;
+  margin-left: 20px;
+  width: calc(100% - 40px);
+  height: calc(100% - 150px);
+}
+
+.pain {
+  width: 50%;
+  height: 100%;
+  overflow-y: scroll;
+}
+
+.left {
+  width: 500px;
+}
+
+.right {
+    width: calc(100% - 510px);
+    padding-left: 10px;
+    border-left: 1px solid #ffffff;
+}
+
+.box{
+    height: 50px;
+    background-color: gray;
+    margin: 2px;
+}
+
+.underline{
+    border-bottom: 1px solid #d0d0d0;
+}
+
+.code{
+    display: inline-block;
+    font-family: "Noto Sans Mono", monospace;
+    background-color: #EAEAEA;
+    padding: 0px;
+    width: calc(100% - 10px);
+}
+
+.codescr{
+    display: inline-block;
+    font-family: "Noto Sans Mono", monospace;
+    font-optical-sizing: auto;font-variation-settings:"wdth" 100;
+    width: calc(100% - 10px);
+    white-space: nowrap;
+    overflow-x: scroll;
+    padding: 0px;
+}
+
+.codeMain{
+    display: flex;
+    margin: 2px;
+    padding: 8px;
+    background-color: #202020;
+}
+
+.copyIcon{
+    font-size: 14px;
+    cursor: pointer;
+    padding: 0px;
+    text-align: center;
+}
+
+.codescr::-webkit-scrollbar{
+    display: none;
+}
+
+textarea{
+    resize: vertical;
+}
+
+.dateBox{
+    padding: 0px;
+}
+
+.subSearchButton{
+    font-size: 14px;
+    height: 30px;
+    width: 50px;
+}
+
+.nobreak{
+    display: inline;
+}
