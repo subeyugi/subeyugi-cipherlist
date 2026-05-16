@@ -1,0 +1,7 @@
+name = my-pages-app
+compatibility_date = 2026-05-16
+
+[[d1_databases]]
+binding = DB
+database_name = my-db
+database_id = xxxxxxxx
