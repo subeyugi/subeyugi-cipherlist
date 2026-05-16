@@ -1,18 +1,17 @@
 export default {
-  async fetch(request: Request, env: Env) {
+  async fetch(request, env) {
     const { pathname } = new URL(request.url);
 
     if (pathname === "/api/beverages") {
-      const { results } = await env.DB.prepare(
-        "SELECT * FROM Customers WHERE CompanyName = ?"
-      )
-        .bind("Bs Beverages")
-        .all();
+      // If you did not use `DB` as your binding name, change it here
+      const { results } = await env.prod_d1_tutorial
+        .prepare("SELECT * FROM test_table;")
+        .run();
       return Response.json(results);
     }
 
     return new Response(
-      "Call /api/beverages to see everyone who works at Bs Beverages"
+      "Call /api/beverages to see everyone who works at Bs Beverages",
     );
   },
 };
